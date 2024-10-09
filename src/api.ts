@@ -57,6 +57,7 @@ instance.interceptors.request.use(
   (config) => {
     if (config.url?.includes("create-response") && config.data) {
       config.data = toCamelCase(config.data);
+      return config;
     }
     config.data = toSnakeCase(config.data);
 
