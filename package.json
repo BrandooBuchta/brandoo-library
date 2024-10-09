@@ -1,6 +1,6 @@
 {
     "name": "react-brandoo-library",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "A small library for Brandoo API integration",
     "main": "dist/useBrandoo.js",
     "types": "dist/useBrandoo.d.ts",
