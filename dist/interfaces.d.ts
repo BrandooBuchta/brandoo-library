@@ -12,7 +12,7 @@ export interface OptionsResponse {
 }
 export interface Brandoo {
     addStatisticValue: (statisticId: string, value: StatisticValue) => Promise<void>;
-    getPropertyOptions: (propertyId: string, setter: Dispatch<SetStateAction<OptionsResponse>>) => Promise<void>;
+    getPropertyOptions: (propertyId: string, setter: Dispatch<SetStateAction<OptionsResponse | null>>) => Promise<void>;
     createResponse: (formId: string, data: object) => Promise<void>;
     getContent: (contentId: string, setter: Dispatch<SetStateAction<any>>) => Promise<void>;
 }
