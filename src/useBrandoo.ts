@@ -4,12 +4,12 @@ import { api, setAuthTokenHeader } from "./api";
 import { Brandoo, OptionsResponse } from "./interfaces";
 
 const useBrandoo = (): Brandoo => {
-  const token = process.env.NEXT_PUBLIC_BRANDOO_AUTH_TOKEN;
+  const token: string | undefined = process.env.NEXT_PUBLIC_BRANDOO_AUTH_TOKEN;
 
   token && setAuthTokenHeader(token);
 
   return {
-    pushStatistic: async (statisticId, value) => {
+    addStatisticValue: async (statisticId, value) => {
       try {
         await api.post(`statistics/value/${statisticId}`, value);
       } catch (error) {

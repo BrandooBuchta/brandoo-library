@@ -10,7 +10,7 @@ import {
   mapValues,
 } from "lodash";
 
-export const baseURL = "https://api.brandoo.cz/api/";
+export const baseURL: string = "https://api.brandoo.cz/api/";
 
 const instance: AxiosInstance = axios.create({
   baseURL,
@@ -20,7 +20,7 @@ const instance: AxiosInstance = axios.create({
   },
 });
 
-export const setAuthTokenHeader = (token: string | null) => {
+export const setAuthTokenHeader = (token: string | null): void => {
   let t: string | null = `Bearer ${token}`;
 
   if (token === null) t = null;

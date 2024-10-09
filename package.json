@@ -1,0 +1,40 @@
+{
+    "name": "react-brandoo-library",
+    "version": "1.0.0",
+    "description": "A small library for Brandoo API integration",
+    "main": "dist/useBrandoo.js",
+    "types": "dist/useBrandoo.d.ts",
+    "scripts": {
+        "build": "tsc"
+    },
+    "author": "Simon Buchta",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/lodash": "^4.17.10",
+        "@types/react": "^18.3.11",
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "axios": "^1.4.0",
+        "lodash": "^4.17.21",
+        "react": "^18.3.1"
+    },
+    "files": [
+        "dist"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BrandooBuchta/brandoo-library.git"
+    },
+    "keywords": [
+        "brandoo",
+        "cms",
+        "crm",
+        "statistics",
+        "analytics"
+    ],
+    "bugs": {
+        "url": "https://github.com/username/brandoo-lib/issues"
+    },
+    "homepage": "https://github.com/username/brandoo-lib#readme"
+}

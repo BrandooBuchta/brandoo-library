@@ -17,7 +17,7 @@ export interface OptionsResponse {
 }
 
 export interface Brandoo {
-  pushStatistic: (statisticId: string, value: StatisticValue) => Promise<void>;
+  addStatisticValue: (statisticId: string, value: StatisticValue) => Promise<void>;
   getPropertyOptions: (
     propertyId: string,
     setter: Dispatch<SetStateAction<OptionsResponse>>,
